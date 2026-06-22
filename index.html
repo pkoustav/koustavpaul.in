@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koustav Paul | BI & Analytics Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Koustav Paul, a results-driven BI & Analytics Engineer with 4+ years of experience designing and delivering end-to-end data solutions using Power BI, Microsoft Fabric, SQL, and DAX.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Data-Stream Particle Effects -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">KP</span>.data
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <svg class="hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                
+                <!-- Dark/Light Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="badge">BI & Analytics Engineer</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Koustav Paul</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transforming complex, multi-source raw data into high-impact dashboards and semantic models that drive enterprise-level business decisions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#certifications" class="btn btn-primary">
+                            <span>View Certifications</span>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </a>
+                        <a href="Koustav Paul Resume.pdf" class="btn btn-secondary" download>
+                            <span>Get Resume</span>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/koustav-paul-0737a316b/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="LinkedIn Profile">
+                            <span>LinkedIn</span>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-frame">
+                        <img src="My 2nd Image.png" alt="Koustav Paul" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Summary</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text-card">
+                        <p>
+                            I am a results-driven <strong>BI & Analytics Engineer with 4+ years of experience</strong> designing and delivering end-to-end data solutions using **Power BI** and **Microsoft Fabric**.
+                        </p>
+                        <p>
+                            Adept at working across the full analytics stack—from pipeline orchestration and data modelling to complex DAX development, row-level security implementation, and stakeholder reporting. I specialize in bridging the gap between raw data complexity and executive-level decision making.
+                        </p>
+                        <p>
+                            Whether designing optimized star-schema dimensional models or writing T-SQL stored procedures, my focus remains on performance, scalability, and delivering actionable business insights.
+                        </p>
+                    </div>
+                    <div class="about-metrics">
+                        <div class="metric-card">
+                            <h3 class="metric-number">4+</h3>
+                            <p class="metric-label">Years of Experience</p>
+                        </div>
+                        <div class="metric-card">
+                            <h3 class="metric-number">3x</h3>
+                            <p class="metric-label">Microsoft Certified</p>
+                        </div>
+                        <div class="metric-card">
+                            <h3 class="metric-number">100%</h3>
+                            <p class="metric-label">End-to-End Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Skills Dashboard -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills Workspace</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-subtitle">Select a category to query my proficiency metrics in real-time.</p>
+                </div>
+
+                <div class="dashboard-container">
+                    <!-- Dashboard Sidebar Menu -->
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-header">
+                            <span class="sidebar-dot"></span>
+                            <span class="sidebar-title">DATA CATEGORIES</span>
+                        </div>
+                        <ul class="sidebar-menu">
+                            <li>
+                                <button class="sidebar-btn active" data-category="visualization">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+                                    <span>BI & Visualization</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="sidebar-btn" data-category="languages">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                    <span>Languages & Query</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="sidebar-btn" data-category="modelling">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                    <span>Data Modelling</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="sidebar-btn" data-category="pipelines">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+                                    <span>ETL & Pipelines</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="sidebar-btn" data-category="cloud">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                                    <span>Cloud & Security</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Dashboard Main Workspace -->
+                    <div class="dashboard-workspace">
+                        <!-- Top KPI Blocks -->
+                        <div class="kpi-row">
+                            <div class="kpi-card">
+                                <span class="kpi-label">Active Stack</span>
+                                <span class="kpi-val" id="kpi-stack">MS Fabric</span>
+                            </div>
+                            <div class="kpi-card">
+                                <span class="kpi-label">Primary Tool</span>
+                                <span class="kpi-val" id="kpi-tool">Power BI</span>
+                            </div>
+                            <div class="kpi-card">
+                                <span class="kpi-label">Proficiency Level</span>
+                                <span class="kpi-val" id="kpi-level">Expert</span>
+                            </div>
+                        </div>
+
+                        <!-- Main Visualization Card -->
+                        <div class="workspace-card">
+                            <div class="workspace-card-header">
+                                <h3 id="category-title" class="card-title">BI & Visualization</h3>
+                                <span class="live-indicator">● LIVE</span>
+                            </div>
+                            
+                            <!-- Skill Proficiency Gauges -->
+                            <div class="skills-showcase" id="skills-list">
+                                <!-- Dynamically populated by JS, template below -->
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Power BI Desktop & Service</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Microsoft Fabric Workspace</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skills Context Summary -->
+                            <div class="skills-summary-box">
+                                <h4 class="summary-title">Implementation Context:</h4>
+                                <p id="category-description" class="summary-text">
+                                    Authoring complex dashboards with clean UX/UI, configuring gateways, and deploying Fabric capacity workspaces to support self-service analytics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Timeline Card -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2022 – Present</div>
+                        <div class="timeline-content card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="role-title">Associate Software Developer</h3>
+                                    <h4 class="company-name">Embee Software Pvt. Ltd.</h4>
+                                </div>
+                                <span class="location-badge">Kolkata, India</span>
+                            </div>
+                            
+                            <ul class="experience-details">
+                                <li>
+                                    <strong>Fabric & Pipeline Engineering:</strong> Architected end-to-end data ingestion workflows using Microsoft Fabric—designing Lakehouses, Warehouse schemas, and orchestrating Data Pipelines to reliably process and transform large-scale enterprise data.
+                                </li>
+                                <li>
+                                    <strong>Dimensional Modelling:</strong> Designed and implemented star-schema models in SSMS, building optimised fact and dimension tables that significantly improved query performance across Power BI reports and dashboards.
+                                </li>
+                                <li>
+                                    <strong>DAX Development:</strong> Authored advanced DAX measures covering time intelligence, dynamic ranking, running totals, and KPI calculations, delivering accurate and flexible analytical capabilities to business users.
+                                </li>
+                                <li>
+                                    <strong>Power Query & Data Transformation:</strong> Built reusable Power Query pipelines to cleanse, merge, and reshape data from multiple heterogeneous sources, reducing manual data-prep effort and improving report refresh reliability.
+                                </li>
+                                <li>
+                                    <strong>Dashboard & Report Delivery:</strong> Designed and published interactive, executive-level Power BI dashboards aligned to stakeholder KPIs—enabling self-service analytics and data-driven decision-making across business units.
+                                </li>
+                                <li>
+                                    <strong>Security & Governance:</strong> Configured Dynamic Row-Level Security (RLS) and managed on-premises data gateways, ensuring role-based data access and secure, compliant reporting for enterprise users.
+                                </li>
+                                <li>
+                                    <strong>SQL Optimisation:</strong> Wrote and tuned T-SQL views, stored procedures, and queries to support efficient data extraction, improving report load performance and reducing processing overhead.
+                                </li>
+                                <li>
+                                    <strong>Stakeholder & UAT Management:</strong> Led requirements-gathering sessions with business stakeholders, facilitated UAT cycles, and resolved data discrepancies promptly—ensuring high-quality, on-time deliverables.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications & Credentials</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-subtitle">Click on any card to view the official certificate.</p>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Certificate Card 1 -->
+                    <div class="cert-card" data-cert="dp_700">
+                        <div class="cert-card-media">
+                            <img src="dp_700_certificate.jpeg" alt="Fabric Data Engineer Certificate" class="cert-thumb">
+                            <div class="cert-overlay">
+                                <span class="cert-action-btn">Expand Credential</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-body">
+                            <span class="cert-code">DP-700</span>
+                            <h3 class="cert-name">Microsoft Certified: Fabric Data Engineer Associate</h3>
+                            <p class="cert-desc">Validates expert-level capabilities in building and deploying scalable enterprise-level data integration pipelines, warehouses, and lakehouses using Microsoft Fabric.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Card 2 -->
+                    <div class="cert-card" data-cert="dp_600">
+                        <div class="cert-card-media">
+                            <img src="dp_600_certificate.jpeg" alt="Fabric Analytics Engineer Certificate" class="cert-thumb">
+                            <div class="cert-overlay">
+                                <span class="cert-action-btn">Expand Credential</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-body">
+                            <span class="cert-code">DP-600</span>
+                            <h3 class="cert-name">Microsoft Certified: Fabric Analytics Engineer Associate</h3>
+                            <p class="cert-desc">Demonstrates proficiency in designing, creating, and deploying analytics solutions using Microsoft Fabric and Power BI—from data prep to semantic models.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Card 3 -->
+                    <div class="cert-card" data-cert="pl_300">
+                        <div class="cert-card-media">
+                            <img src="pl_300_certificate.jpeg" alt="Data Analyst Associate Certificate" class="cert-thumb">
+                            <div class="cert-overlay">
+                                <span class="cert-action-btn">Expand Credential</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-body">
+                            <span class="cert-code">PL-300</span>
+                            <h3 class="cert-name">Microsoft Certified: Data Analyst Associate</h3>
+                            <p class="cert-desc">Core certification validating fundamental capability in building clear reports, advanced DAX modeling, data shaping, and administration in Power BI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Column -->
+                    <div class="contact-info">
+                        <h3>Let's Collaborate</h3>
+                        <p class="contact-info-subtitle">Interested in data orchestration, dashboard design, or enterprise BI solutions? Feel free to reach out using the details below or download my details directly.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Email</span>
+                                    <a href="mailto:pkoustav6@gmail.com" class="detail-value">pkoustav6@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Phone</span>
+                                    <a href="tel:+918240086343" class="detail-value">+91 8240086343</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Kolkata, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Documents Downloads -->
+                        <div class="doc-downloads">
+                            <h4>Project Attachments</h4>
+                            <div class="doc-buttons">
+                                <a href="Koustav Paul Resume.pdf" class="btn btn-secondary" download>
+                                    <span>Resume.pdf</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                                </a>
+                                <a href="Koustav Paul CoverLetter.pdf" class="btn btn-secondary" download>
+                                    <span>CoverLetter.pdf</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-container card">
+                        <form id="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="I would like to discuss a project..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                            <div id="form-feedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Koustav Paul. All rights reserved.</p>
+            <p class="footer-design">Designed & Built with HTML & Vanilla CSS</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Certificate Viewer -->
+    <div id="cert-modal" class="modal" aria-hidden="true">
+        <button class="modal-close" id="modal-close" aria-label="Close modal">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-content">
+            <img src="" id="modal-img" alt="Enlarged Certificate" class="modal-image">
+            <div class="modal-caption" id="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle -->
+    <script src="app.js"></script>
+</body>
+</html>
