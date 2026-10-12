@@ -805,6 +805,56 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+/* Experience Project Architecture Cards */
+.experience-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.experience-project-card {
+    background: rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.experience-project-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px var(--border-glow);
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+}
+
+.project-card-stack {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    background: rgba(0, 242, 254, 0.08);
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-glow);
+    letter-spacing: 0.02em;
+}
+
 /* Certifications Section Grid */
 .certifications-grid {
     display: grid;
@@ -991,6 +1041,7 @@ a.detail-value:hover {
 .doc-buttons {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .contact-form-container {

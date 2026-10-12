@@ -236,16 +236,16 @@ const skillsData = {
         ]
     },
     cloud: {
-        title: "Cloud, AI & Governance",
-        stack: "Azure / AI Agents / RLS",
-        tool: "Azure Portal & Fabric",
-        level: "Advanced",
-        description: "Engineering autonomous Data Agents over Fabric semantic models for Natural Language Querying (NLQ), configuring Dynamic RLS and managing On-Premises Gateways.",
+        title: "GenAI, Agents & Cloud",
+        stack: "Copilot Studio / Foundry / MCP",
+        tool: "Copilot Studio / Foundry",
+        level: "Expert",
+        description: "Deploying autonomous Data Agents via Microsoft Copilot Studio & Microsoft Foundry, integrating Model Context Protocol (MCP) servers with live semantic models, and configuring Dynamic RLS.",
         skills: [
-            { name: "Custom Data Agents & NLQ Deployment", pct: 90 },
-            { name: "Dynamic Row-Level Security (RLS)", pct: 95 },
-            { name: "Azure Synapse & Data Lake Gen2", pct: 88 },
-            { name: "On-Premises Data Gateways & Governance", pct: 92 }
+            { name: "Microsoft Copilot Studio & Agent Workflows", pct: 95 },
+            { name: "Microsoft Foundry (Azure AI Integration)", pct: 92 },
+            { name: "Model Context Protocol (MCP) Servers & NLQ", pct: 92 },
+            { name: "Dynamic Row-Level Security (RLS) & Gateways", pct: 95 }
         ]
     }
 };
