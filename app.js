@@ -214,7 +214,7 @@ const skillsData = {
         stack: "SSAS / Star Schema / Ontologies",
         tool: "SSAS / SSMS / Fabric",
         level: "Expert",
-        description: "Architecting enterprise star-schema and tabular models in SSAS and designing Real Estate Data Ontologies to unify multi-source entities.",
+        description: "Architecting enterprise star-schema and tabular models in SSAS and designing Enterprise Data Ontologies to unify multi-source business entities.",
         skills: [
             { name: "SSAS Tabular & Star Schema Architecture", pct: 95 },
             { name: "Enterprise Data Ontology Design", pct: 92 },
@@ -249,11 +249,11 @@ const skillsData = {
         ]
     },
     domain: {
-        title: "Real Estate Analytics & Governance",
-        stack: "Real Estate Lifecycle / UAT",
+        title: "Multi-Industry Analytics & Governance",
+        stack: "Cross-Industry / UAT",
         tool: "Data Dictionaries / UAT",
         level: "Specialist",
-        description: "End-to-end Real Estate analytics delivery across 5 core milestones (Lead, Sales, Funnel, CRM, Channel Partner), paired with exhaustive Data Dictionaries and rigorous UAT governance.",
+        description: "End-to-end enterprise analytics delivery across diverse sectors (Real Estate, Finance, Retail) spanning 5 core milestones (Lead, Sales, Funnel, CRM, Channel Partner), paired with exhaustive Data Dictionaries and rigorous UAT governance.",
         skills: [
             { name: "Lead, Sales & Funnel Integrated Analysis", pct: 96 },
             { name: "CRM & Channel Partner (CP) Analytics", pct: 94 },
