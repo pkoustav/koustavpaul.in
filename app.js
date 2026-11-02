@@ -184,68 +184,81 @@ function initMobileMenu() {
 /* Skills Workspace Dashboard Interaction */
 const skillsData = {
     visualization: {
-        title: "BI & Visualization",
-        stack: "Power BI / Fabric",
+        title: "BI & Semantic Modeling",
+        stack: "Power BI / SSAS",
         tool: "Power BI Desktop",
         level: "Expert",
-        description: "Designing high-performance executive dashboards aligned with key business metrics. Integrating Microsoft Copilot & AI analytics tools to accelerate delivery by 35%.",
+        description: "Designing high-performance executive dashboards, authoring models in both Import Mode and Live Connection, and tuning DAX queries via DAX Studio and Tabular Editor.",
         skills: [
-            { name: "Power BI (Desktop & Service)", pct: 95 },
-            { name: "Microsoft Fabric Workspace", pct: 92 },
-            { name: "Microsoft Copilot & AI Analytics", pct: 90 },
-            { name: "Paginated Reports & Executive Dashboards", pct: 88 }
+            { name: "Power BI (Import Mode & Live Connection)", pct: 96 },
+            { name: "SSAS Tabular Data Modeling", pct: 92 },
+            { name: "DAX Studio & Tabular Editor Tuning", pct: 92 },
+            { name: "Executive Dashboards & Visuals", pct: 94 }
         ]
     },
     languages: {
-        title: "Languages & Query",
-        stack: "SQL / DAX / Python",
+        title: "Languages & Query Optimization",
+        stack: "T-SQL / DAX / Python",
         tool: "SSMS / DAX Studio",
         level: "Expert",
-        description: "Authoring high-performance T-SQL queries (45% execution speedup), complex DAX measures, and Python data transformations for scalable analytics.",
+        description: "Authoring high-performance T-SQL stored procedures, views, complex DAX measures, and transforming data in Power Query Editor (GUI), boosting query speeds by 45%.",
         skills: [
-            { name: "SQL (T-SQL, Stored Procedures, Views)", pct: 95 },
-            { name: "DAX (Time Intelligence & Strategic KPIs)", pct: 95 },
-            { name: "Python (Data Processing & Transformation)", pct: 88 },
-            { name: "M Formula Language (Power Query)", pct: 90 }
+            { name: "SQL (SSMS Stored Procedures & Views)", pct: 96 },
+            { name: "Complex DAX (Time Intelligence & Ranking)", pct: 95 },
+            { name: "Power Query Editor (Data Shaping & Cleansing)", pct: 92 },
+            { name: "Python (Data Wrangling & Processing)", pct: 88 }
         ]
     },
     modelling: {
-        title: "Ontology & Data Modelling",
-        stack: "Enterprise Ontology / Star Schema",
-        tool: "Fabric / SSMS",
+        title: "Data Modeling & Ontologies",
+        stack: "SSAS / Star Schema / Ontologies",
+        tool: "SSAS / SSMS / Fabric",
         level: "Expert",
-        description: "Designing Enterprise Data Ontologies and star-schema models to unify cross-departmental entities into a robust single source of truth.",
+        description: "Architecting enterprise star-schema and tabular models in SSAS and designing Real Estate Data Ontologies to unify multi-source entities.",
         skills: [
+            { name: "SSAS Tabular & Star Schema Architecture", pct: 95 },
             { name: "Enterprise Data Ontology Design", pct: 92 },
-            { name: "Semantic Data Modeling", pct: 95 },
-            { name: "Star & Snowflake Schema Design", pct: 95 },
-            { name: "Fact & Dimension Modeling (RDBMS)", pct: 92 }
+            { name: "Normalized Relational Data Modeling", pct: 94 },
+            { name: "Fact & Dimension Model Optimization", pct: 92 }
         ]
     },
     pipelines: {
-        title: "Data Engineering & ETL",
-        stack: "Fabric Pipelines / Medallion",
-        tool: "Fabric Data Factory",
-        level: "Advanced",
-        description: "Architecting enterprise data pipelines with Medallion Architecture (Bronze/Silver/Gold Lakehouses & Warehouses), achieving 99.9% scheduled refresh reliability.",
+        title: "Cloud DW, Lakehouse & ETL",
+        stack: "Fabric / Synapse / Azure Blob",
+        tool: "Fabric Data Factory / Synapse",
+        level: "Expert",
+        description: "Ingesting multi-source enterprise data (SAP, SFTP, SQL) into Azure Blob Storage Lakehouses, Synapse Dedicated SQL Pools, and migrating workloads to Fabric with automated mail alerts.",
         skills: [
-            { name: "Medallion Architecture (Bronze/Silver/Gold)", pct: 92 },
-            { name: "Fabric Data Pipelines & Lakehouses", pct: 92 },
-            { name: "ETL / ELT Ingestion & Transformation", pct: 90 },
-            { name: "Warehouse Schema Orchestration", pct: 88 }
+            { name: "Microsoft Fabric Data Pipelines & Workspaces", pct: 94 },
+            { name: "Azure Synapse Dedicated SQL Pools", pct: 92 },
+            { name: "Azure Blob Storage (ADLS Gen2) Lakehouse", pct: 92 },
+            { name: "Multi-Source Ingestion (SAP ERP, SFTP, SQL)", pct: 90 }
         ]
     },
     cloud: {
-        title: "GenAI, Agents & Cloud",
+        title: "GenAI, Data Agents & Governance",
         stack: "Copilot Studio / Foundry / MCP",
         tool: "Copilot Studio / Foundry",
         level: "Expert",
-        description: "Deploying autonomous Data Agents via Microsoft Copilot Studio & Microsoft Foundry, integrating Model Context Protocol (MCP) servers with live semantic models, and configuring Dynamic RLS.",
+        description: "Deploying autonomous Data Agents via Microsoft Copilot Studio & Foundry, integrating MCP servers with live semantic models, and configuring Dynamic RLS.",
         skills: [
-            { name: "Microsoft Copilot Studio & Agent Workflows", pct: 95 },
+            { name: "Microsoft Copilot Studio & Custom Data Agents", pct: 94 },
             { name: "Microsoft Foundry (Azure AI Integration)", pct: 92 },
             { name: "Model Context Protocol (MCP) Servers & NLQ", pct: 92 },
             { name: "Dynamic Row-Level Security (RLS) & Gateways", pct: 95 }
+        ]
+    },
+    domain: {
+        title: "Real Estate Analytics & Governance",
+        stack: "Real Estate Lifecycle / UAT",
+        tool: "Data Dictionaries / UAT",
+        level: "Specialist",
+        description: "End-to-end Real Estate analytics delivery across 5 core milestones (Lead, Sales, Funnel, CRM, Channel Partner), paired with exhaustive Data Dictionaries and rigorous UAT governance.",
+        skills: [
+            { name: "Lead, Sales & Funnel Integrated Analysis", pct: 96 },
+            { name: "CRM & Channel Partner (CP) Analytics", pct: 94 },
+            { name: "Enterprise Data Dictionaries & Client Communication", pct: 95 },
+            { name: "End-to-End User Acceptance Testing (UAT)", pct: 95 }
         ]
     }
 };
